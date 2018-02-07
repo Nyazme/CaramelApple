@@ -3,6 +3,7 @@ var numberArray = [];
 function submitNumber (){
     var number= document.getElementById("theNumber").value;
 
+
     //var newNumber = newNumber(number);
     numberArray.push(parseFloat(number));
 
@@ -11,8 +12,10 @@ function submitNumber (){
     value += numberArray[i];
     }
     console.log(value);
+    document.getElementById("textelement").innerHTML = value.toString()
 
-    //array.push(parseFloat(theNumber));
+
+
 
 
 
